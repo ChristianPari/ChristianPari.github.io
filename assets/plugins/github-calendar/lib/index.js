@@ -73,7 +73,7 @@ module.exports = function GitHubCalendar (container, username, options) {
     container = $(container)
 
     options = options || {}
-    options.summary_text = options.summary_text || `Summary of pull requests, issues opened, and commits made by <a href="https://github.com/ChristianPari" target="blank">@ChristianPari</a>`
+    options.summary_text = options.summary_text || `Summary of pull requests, issues opened, and commits made by <a href="https://github.com/${username}" target="blank">@${username}</a>`
     options.cache = (options.cache || (24 * 60 * 60)) * 1000
 
     if (options.global_stats === false) {
@@ -81,13 +81,13 @@ module.exports = function GitHubCalendar (container, username, options) {
     }
 
     const cacheKeys = {
-        content: `gh_calendar_content.ChristianPari`,
-        expire_at: `gh_calendar_expire.ChristianPari`
+        content: `gh_calendar_content.${username}`,
+        expire_at: `gh_calendar_expire.${username}`
     }
 
     // We need a proxy for CORS
     options.proxy = options.proxy || (username => {
-        return fetch(`https://api.bloggify.net/gh-calendar/?username=ChristianPari`).then(r => r.text())
+        return fetch(`https://api.bloggify.net/gh-calendar/?username=${username}`).then(r => r.text())
     })
 
     options.getCalendar = options.getCalendar || (username => {
