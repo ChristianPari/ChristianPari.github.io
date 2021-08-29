@@ -271,3 +271,7 @@ grey {
   color: #fff;
   font-weight: bold;
 }
+
+.credits:hover {
+color: #ffffff00;
+}
