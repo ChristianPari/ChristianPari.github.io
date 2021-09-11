@@ -92,6 +92,10 @@ hr {
   box-shadow: 5px 5px rgba(0, 0, 0, 0.2);
 }
 
+.col-xs-6 {
+  padding-left: 14px;
+}
+
 .col-md-4 {
   padding-left: 0px;
   padding-right: 0px;
@@ -286,8 +290,4 @@ grey {
 .my-add-ons {
   text-decoration: none;
   color: #ebb31c;
-}
-
-.col-xs-6 {
-  padding-left: 14px;
 }
