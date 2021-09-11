@@ -287,3 +287,7 @@ grey {
   text-decoration: none;
   color: #ebb31c;
 }
+
+.col-xs-6 {
+  padding-left: 14px;
+}
