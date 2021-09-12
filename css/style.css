@@ -276,15 +276,19 @@ grey {
 }
 
 .credits {
-  font-size: 5px;
+  font-size: 13px;
   text-align: center;
-  padding: 20px 0;
-  color: rgba(255, 255, 255, 0.185);
+  padding: 30px 0;
+  color: rgba(255, 255, 255, 0.274);
 }
 
 .credits a {
-  color: rgba(255, 255, 255, 0.397);
+  color: rgba(255, 255, 255, 0.31);
   font-weight: bold;
+}
+
+.credits:hover, a:hover {
+  color: white;
 }
 
 /* my additions */
