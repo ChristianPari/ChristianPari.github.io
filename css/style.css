@@ -276,9 +276,10 @@ grey {
 }
 
 .credits {
+  font-size: 5px;
   text-align: center;
-  padding: 5px 0;
-  color: rgba(255, 255, 255, 0.233);
+  padding: 20px 0;
+  color: rgba(255, 255, 255, 0.185);
 }
 
 .credits a {
